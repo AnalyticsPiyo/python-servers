@@ -1,9 +1,0 @@
-flask
-flask_httpauth
-flask_bootstrap
-google.cloud
-google-cloud-videointelligence
-google-cloud-storage
-google
-google-api-python-client
-metrics_tracker_client
