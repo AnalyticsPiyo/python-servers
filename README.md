@@ -50,5 +50,6 @@ flask、tweepy
 - environment<br>
 flask、gcloud、video-intelligence
 - memo<br>
-gcloudの動画判定のAPIを使用して動画がアダルト動画かどうかの判定を行う。
+gcloudの動画判定のAPIを使用して動画がアダルト動画かどうかの判定を行う。<br>
+ファイルが足りていない可能性があり、そのままでは動かないかも。
 
