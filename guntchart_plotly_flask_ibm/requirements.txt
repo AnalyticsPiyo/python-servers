@@ -1,0 +1,10 @@
+datetime
+Flask
+flask_httpauth
+flask_bootstrap
+gspread
+metrics_tracker_client
+oauth2client
+pandas
+pip
+plotly

@@ -1,0 +1,30 @@
+body {
+  font-family: "Meiryo","Meiryo UI","ƒqƒ‰ƒMƒmŠpƒS Pro W3","Hiragino Kaku Gothic Pro","‚l‚r ‚oƒSƒVƒbƒN","Osaka",sans-serif;
+  font-size: 18px;
+/*  background-color: #eeeeee; */
+
+  link: #000;
+  visited: #000;
+  hover: #ff0000; 
+
+}
+
+/* CSS‚ÅƒŒƒXƒ|ƒ“ƒVƒu‘Î‰ž */
+@media screen and (max-width: 560px) {
+  .iframe-wrapper {
+    text-align: center; 
+    position: relative;
+    width: 100%;
+    padding: calc(315 / 560 * 100%) 0 0;
+  }
+  .iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+.sub-container{
+   background-color: #eeeeee;
+}

@@ -1,0 +1,9 @@
+applications:
+- name: ***-flask
+disk_quota: 1024M
+memory: 64M
+host: ******
+domain: mybluemix.net
+command: python app.py
+path: .
+instances: 1

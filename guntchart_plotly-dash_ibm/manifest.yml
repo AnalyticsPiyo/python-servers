@@ -1,0 +1,9 @@
+applications:
+- name: flask
+disk_quota: 1024M
+memory: 128M
+domain: mybluemix.net
+command: python app.py
+path: .
+instances: 1
+buildpack: python_buildpack

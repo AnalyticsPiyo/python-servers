@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+    author : Hideyuki.Takase
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&amp;subset=japanese" rel="stylesheet">
+        <link href="/static/css/main.css" rel="stylesheet" type="text/css" media="all">
+<!--        
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="/static/js/infinite-scroll.pkgd.min.js"></script>
+        <script type="text/javascript" src="/static/js/infinite-scroll.pkgd.min.js"></script>
+-->
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="//unpkg.com/jscroll/dist/jquery.jscroll.min.js"></script>
+        
+        <script type="text/javascript">
+            $(function(){
+                $('.article').jscroll({
+                    nextSelector: 'a.next',
+                    padding: 20,
+                    contentSelector: 'div.article',
+                    loadingHtml: '<i class="fa fa-spinner">Now Loading...</i>'
+                });
+            });
+        </script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--        
+        <script type="text/javascript" src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.js"></script>
+        <script type="text/javascript">
+            jQuery(function($){
+                jQuery('#content').infinitescroll({
+                    navSelector  : ".navigation",
+                    nextSelector : ".navigation a",
+                    itemSelector : ".article"
+                });
+            });
+        </script>
+        <link rel="shortcut icon" href="./img/niko.ico">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+-->
+        <title>*******</title>
+
+    </head>
+    <body>
+        <header class="site-header">
+            <H1 id="title">********</H1>
+            <form action = "/" method = "POST">
+                <p><input type = "text" name = "tweet" /><input type = "submit" value = "Tweet" /></p>
+            </form>
+        </header>
+        <div class="article">
+           {% if tweet %}
+               {% for i in tweet %}
+                   <p>
+                       {{i[0]}} {{i[1]}} {{i[2]}}<br>
+                       {{i[3]}}
+                   </p>
+               {% endfor %}
+               {% if tweet[0][0] > 10 %}
+                   <p><a class="next" href="/?count={{tweet[0][0]}}">さらに5件読み込む</a></p>
+               {% endif %}
+           {% endif %}
+        </div>
+    </body>
+</html>

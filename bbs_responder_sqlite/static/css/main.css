@@ -1,0 +1,82 @@
+/* このファイルはプロジェクト直下に作ったstatic/cssディレクトリの下に置く */
+/* タグ */
+
+html {
+    margin:0;
+}
+body {
+    font-size: calc(95% + 0.5vw);
+    font-family: 'Kosugi Maru' , 'メイリオ’ ,‘Quicksand’, ‘ヒラギノ角ゴシック’, ‘sans-serif';
+    line-height: 130%;
+    margin:0;
+}
+img {
+    border-radius: 50%;   /* 角丸半径を50%にする(=円形にする) */
+    width:  15.0em;       /* ※縦横を同値に */
+    height: 15.0em;       /* ※縦横を同値に */
+}
+/* クラス */
+.site-header {
+    background: #ffe4e1;
+/*    display: flex; */
+/*    padding: 60px 20px; */
+    position: fixed;
+    width: 100%;
+}
+.box1 {
+    padding-top: 5%;
+    padding-right: 1%;
+    padding-bottom: 20%;
+    padding-left: 5%;
+    margin: 5%;
+    /* color: #2c2c2f; */
+    background: #f5f5f5; /*背景色 #dcdcdc */
+}
+/* ID */
+/*
+#title{
+ margin:0;
+}
+*/
+#wrap {
+    width: 90%;
+    overflow: hidden;
+}
+#left_content {
+    width: 30.0%;
+    float: left;
+}
+#right_content {
+    width: 70.0%;
+    float: right;
+}
+#footer {
+    clear: both;
+}
+/* スマホ 767px以下 */
+@media only screen and (max-width: 767px) {
+    img {
+        border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+        width:  10.0em;       /* ※縦横を同値に */
+        height: 10.0em;       /* ※縦横を同値に */
+    }
+    #wrap{
+        width: 100%;
+    }
+    #left_content{
+        float: none;
+        width: 90%;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+    #right_content{
+        /* floatを解除 */
+        float: none;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
