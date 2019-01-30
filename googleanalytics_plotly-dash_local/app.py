@@ -28,7 +28,7 @@ def server_layout():
                         , ['sessions']
                         , ['deviceCategory']
     )
-    # dataの型変換
+    # datの型変換
     df["date"] = df["date"].str[0:4] + "年" + df["date"].str[4:6] + "月" + df["date"].str[6:8] + "日"
     return html.Div(children=[
         html.H1(children='GoogleAnalytics'),
