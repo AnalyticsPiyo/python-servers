@@ -4,7 +4,7 @@ entrypoint: gunicorn -b :$PORT main:app
 instance_class: F2
 
 env_variables:
-  BUCKET_NAME: "example-piyo-video-bucket"
+  BUCKET_NAME: "example-*********"
 
 runtime_config:
   python_version: 3
